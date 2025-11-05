@@ -1,3 +1,8 @@
+"""The root agent of the assistant.
+
+This agent is responsible for answering user questions. It can delegate
+summarization tasks to the `summarizer_agent`.
+"""
 from google.adk.agents.llm_agent import Agent
 from google.adk.tools import google_search
 
@@ -19,5 +24,3 @@ root_agent = Agent(
     instruction='Answer user questions to the best of your ability. Delegate to summarizer_agent to summarize the content.',
     sub_agents=[summarizer_agent],
 )
-
-
