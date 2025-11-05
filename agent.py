@@ -1,3 +1,8 @@
+"""An agent that summarizes text concisely.
+
+This agent is responsible for taking a given text and producing a summarized
+version of it. It is the root agent in this application.
+"""
 from google.adk.agents.llm_agent import Agent
 from google.adk.a2a.utils.agent_to_a2a import to_a2a
 
